@@ -28,3 +28,8 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Experience architecture
+- Keep the coming-soon narrative at the index route with in-page anchors because the requested experience is explicitly one continuous scrolling story.
+- Keep reusable illustrated characters and idea geometry in a browser-safe scene module; use native scroll progress and CSS motion so the narrative needs no animation dependency.
+- Define all visual roles and responsive scene composition in the global design system; imported generated landscapes provide the shared environment.
