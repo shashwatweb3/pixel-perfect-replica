@@ -6,6 +6,7 @@ import { HandoffArt, Idea } from "@/components/story-art";
 import beginning from "@/assets/beginning-world.jpg";
 import workshop from "@/assets/workshop-world.jpg";
 import connected from "@/assets/connected-world.jpg";
+import varaLogo from "@/assets/vara-logo.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({ meta: [
@@ -22,7 +23,7 @@ export const Route = createFileRoute("/")({
 const scenes = [{ id: "beginning", label: "The beginning" }, { id: "about", label: "Behind the scenes" }, { id: "pass-it-on", label: "Pass it on" }, { id: "connection", label: "The connection" }];
 
 function Brand({ footer = false }: { footer?: boolean }) {
-  return <a className={`brand ${footer ? "brand-footer" : ""}`} href="#beginning" aria-label="VARA OFFSTAGE, back to the beginning"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M3 5h7l6 12 6-12h7L16 29Z" /><path d="m9 5 7 13 7-13" /></svg><span>VARA<span className="brand-divider" /><strong>[OFFSTAGE]</strong></span></a>;
+  return <a className={`brand ${footer ? "brand-footer" : ""}`} href="#beginning" aria-label="VARA OFFSTAGE, back to the beginning"><img className="vara-logo" src={varaLogo.url} width={305} height={202} alt="Vara" /><span><span className="brand-divider" /><strong>[OFFSTAGE]</strong></span></a>;
 }
 
 function Index() {
